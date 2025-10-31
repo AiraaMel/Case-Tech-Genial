@@ -4,25 +4,21 @@ Case para demonstrar um motor de validação de suitability de carteira conforme
 
 ## Arquivos
 - `case.py`: implementação em Python com três cenários (aprovado, alerta, rejeitado) e saída em JSON.
-- `case.js`: implementação em Node.js com saída em JSON.
 - `case-report.md`: relatório explicativo sobre requisitos regulatórios e considerações de negócio.
 
 ## Requisitos
 - Python 3.8+ (testado localmente com Python 3.x)
-- Node.js 16+ (testado localmente com Node.js 16+)
 
 ## Como executar
 - Python:
   - `python case.py`
-- Node.js:
-  - `node case.js`
+
 
 A saída é impressa no terminal em formato JSON, com `status`, `risco_projetado` e `mensagem`.
 
 ## Personalização rápida
 Edite os objetos de exemplo nos arquivos para simular diferentes cenários:
 - Python (`case.py:1`): `perfil_cliente`, `carteira_atual`, `nova_ordem_compra`
-- Node.js (`case.js:1`): `perfilCliente`, `carteiraAtual`, `novaOrdemCompra`
 
 ## Observações
 - O arquivo `case-report.md` traz detalhes sobre: registro de termo de ciência, logs de auditoria, LGPD e monitoramento de desenquadramento passivo.
